@@ -10,6 +10,5 @@ class Project
     @backers << backer_instance
     # backer_instance.back_project(self)
     backer_instance.backed_projects << self
-
   end
 end
