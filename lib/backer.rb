@@ -1,0 +1,21 @@
+class Backer
+
+	attr_reader :name, :backed_projects
+ # @backed_projects = []
+
+def initialize(name)
+	@backed_projects = []
+	@name = name
+end
+
+def back_project(project)
+	backed_projects<<project
+	project.backers << self
+end
+
+
+end
+
+ # p1 = Backer.new("avi")
+
+ # p p1.backed_projects
